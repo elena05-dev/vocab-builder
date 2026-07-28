@@ -1,0 +1,39 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 20, 23, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+.modal {
+    position: relative;
+    width: 343px;
+    background-color: #85aa9f;
+    border-radius: 15px;
+    padding: 48px 16px;
+    box-sizing: border-box;
+
+}
+
+
+.closeBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: #121417;
+
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 628px;
+        padding: 64px 48px;
+    }
+}

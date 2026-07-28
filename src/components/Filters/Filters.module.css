@@ -1,0 +1,239 @@
+.filters {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+
+.filters input[type="text"] {
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 15px;
+    padding: 12px 24px;
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+    appearance: none;
+}
+
+.filters select {
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 15px;
+    padding: 12px 24px;
+    width: 100%;
+    height: 48px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+    background-color: #fff;
+    appearance: none;
+}
+
+.filters input[type="text"]:focus,
+.filters select:focus {
+    border-color: #85aa9f;
+
+}
+
+.filters input[type="text"]::placeholder {
+    color: #121417;
+    opacity: 1;
+}
+
+.filters select option {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+}
+
+.searchWrapper {
+    position: relative;
+    width: 100%;
+
+}
+
+.searchWrapper input {
+    width: 100%;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: inline-block;
+    stroke-width: 1.50px;
+    stroke: #121417;
+    fill: #fff;
+    pointer-events: none;
+}
+
+.selectWrapper {
+    position: relative;
+    width: 100%;
+
+}
+
+.selectWrapper select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 100%;
+    padding: 12px 40px 12px 24px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 15px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.selectWrapper svg {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: #121417;
+}
+
+.radioGroup {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+.radioGroup label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #121417;
+}
+
+.radioGroup input[type="radio"] {
+    appearance: none;
+
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(18, 20, 23, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin-right: 8px;
+}
+
+
+.radioGroup input[type="radio"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: #85aa9f;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.radioGroup input[type="radio"]:checked::after {
+    opacity: 1;
+}
+
+.radioGroup input[type="radio"]:checked {
+    border-color: #85aa9f;
+}
+
+@media (min-width: 375px) {
+    .searchWrapper {
+        max-width: 343px;
+    }
+
+    .selectWrapper {
+        max-width: 343px;
+    }
+}
+
+@media (min-width: 768px) {
+    .filters {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 80px;
+        padding-bottom: 28px;
+
+
+    }
+
+    .searchWrapper {
+        flex: 1;
+        max-width: 274px;
+
+    }
+
+    .selectWrapper {
+        width: 164px;
+    }
+
+    .radioGroup {
+        margin-top: 0;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .radioGroup label {
+        white-space: nowrap;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .filters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: auto;
+        padding: 0;
+    }
+
+    .searchWrapper {
+        width: 274px;
+        flex: unset;
+    }
+
+    .selectWrapper {
+        width: 164px;
+    }
+
+    .radioGroup {
+        width: auto;
+        margin-top: 0;
+        gap: 16px;
+        flex-wrap: nowrap;
+    }
+}

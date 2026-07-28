@@ -1,0 +1,93 @@
+.userBar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+
+.mobile {
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+
+.header {
+    padding: 0;
+    margin-left: auto;
+}
+
+.avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.logoutBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #121417;
+    margin-left: 8px;
+}
+
+.userName {
+    display: none;
+
+}
+
+
+.header .userName {
+    color: #121417;
+}
+
+.avatarPlaceholder {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #fcfcfc;
+    color: #85aa9f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    padding-top: 2px;
+}
+
+.header .avatarPlaceholder {
+    background-color: #85aa9f;
+    color: #fcfcfc;
+}
+
+.avatarPlaceholder span {
+    display: block;
+    line-height: 1;
+}
+
+@media (min-width: 375px) {
+    .userName {
+        display: block;
+        color: #fcfcfc;
+        font-family: "MacPaw Fixel Display", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+@media(min-width:1440px) {
+    .userName {
+        color: #121417;
+    }
+
+    .avatarPlaceholder {
+        background-color: #85aa9f;
+        color: #fcfcfc;
+    }
+
+    .mobile {
+        padding: 0;
+    }
+}

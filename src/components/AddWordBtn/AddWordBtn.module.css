@@ -1,0 +1,22 @@
+.addWordBtn {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    padding-right: 16px;
+    background-color: transparent;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+    cursor: pointer;
+}
+
+.addWordBtn:hover {
+    color: #85AA9F;
+}
+
+.iconPlus {
+    line-height: 1;
+}

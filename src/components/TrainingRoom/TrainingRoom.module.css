@@ -1,0 +1,140 @@
+.room {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.answerCard {
+    width: 100%;
+    max-width: 343px;
+    height: 195px;
+    padding: 22px;
+    border-bottom: 1px solid #dbdbdb;
+    border-radius: 8px 8px 0 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+}
+
+.label,
+.input {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+}
+
+.nextBtn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.icon {
+    color: #85AA9F;
+    margin-left: 8px;
+}
+
+.wordCard {
+    width: 100%;
+    max-width: 343px;
+    height: 195px;
+    padding: 22px;
+    border-radius: 0 0 8px 8px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.word {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+}
+
+.bottomRow {
+    margin-top: auto;
+
+}
+
+.input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+
+.country {
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+.langUkr {
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.langUk {
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.flag {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .answerCard {
+        width: 100%;
+        max-width: 704px;
+        height: 300px;
+    }
+
+    .wordCard {
+        width: 100%;
+        max-width: 704px;
+        height: 300px;
+    }
+
+    .langUkr,
+    .langUk {
+        top: 22px;
+        right: 22px;
+        bottom: auto;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    .room {
+        flex-direction: row;
+        gap: 6px;
+    }
+}

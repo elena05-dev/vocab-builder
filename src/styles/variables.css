@@ -1,0 +1,23 @@
+:root {
+
+
+
+    --black: #121417;
+    --white: #fcfcfc;
+    --white-1: #f8f8f8;
+    --green: #85aa9f;
+
+    --text-primary: var(--black);
+    --bg-primary: var(--white);
+
+    --link-color: #121417;
+    --link-hover: #85aa9f;
+
+    --button-bg: #85aa9f;
+    --button-hover: #6f9389;
+
+
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+    --border-radius: 6px;
+}

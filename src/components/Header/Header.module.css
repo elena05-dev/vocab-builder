@@ -1,0 +1,116 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+}
+
+.logoName {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #121417;
+    margin-left: 6px;
+    white-space: nowrap;
+}
+
+.mobileRight {
+    display: flex;
+    align-items: center;
+}
+
+.desktopRight {
+    display: none;
+}
+
+.burger {
+    color: #000;
+    background: none;
+    cursor: pointer;
+    display: block;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+
+.open {
+    display: inline-block;
+    width: 32px;
+    height: 22px;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+
+
+@media (min-width: 375px) {
+    .container {
+        max-width: 375px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        height: 88px;
+        padding: 0 32px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logoName {
+        font-size: 22px;
+        line-height: 32px;
+        margin-left: 16px;
+    }
+
+
+
+    .burger {
+        display: flex;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1240px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mobileRight {
+        display: none;
+    }
+
+    .desktopRight {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+
+}

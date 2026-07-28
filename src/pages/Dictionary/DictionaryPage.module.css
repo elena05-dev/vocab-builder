@@ -1,0 +1,16 @@
+.main {
+    width: 100%;
+}
+
+.dictionarySection {
+    width: 100%;
+    background-color: #fcfcfc;
+
+}
+
+.dictionary {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

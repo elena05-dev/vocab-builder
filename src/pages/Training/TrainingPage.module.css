@@ -1,0 +1,130 @@
+.trainingSection {
+    width: 100%;
+    background-color: #fcfcfc;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.trainingPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footerActions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 116px;
+}
+
+
+.nextBtn,
+.saveBtn {
+    border-radius: 30px;
+    padding: 16px 50px;
+    width: 100%;
+    max-width: 343px;
+    min-width: 245px;
+    height: 56px;
+    background: #85aa9f;
+    color: #fcfcfc;
+    cursor: pointer;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfc;
+}
+
+.nextBtn,
+.saveBtn:hover {
+    background: #a5c0b8;
+}
+
+.cancelBtn {
+    background: transparent;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(18, 20, 23, 0.5);
+    padding-top: 8px;
+}
+
+
+
+.cancelBtn:hover {
+    color: #121417;
+}
+
+.nextBtn {
+    background: #85aa9f;
+    color: #fcfcfc;
+}
+
+.saveBtn {
+    background: #85aa9f;
+    color: #fcfcfc;
+}
+
+@media (min-width: 768px) {
+    .footerActions {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: initial;
+        justify-content: initial;
+        padding-top: 40px;
+        padding-bottom: 104px;
+    }
+
+    .saveBtn {
+        border-radius: 30px;
+        padding: 16px 50px;
+        width: 100%;
+        max-width: 203px;
+        min-width: 203px;
+        height: 56px;
+        background: #85aa9f;
+        color: #fcfcfc;
+        cursor: pointer;
+        font-family: "MacPaw Fixel Display", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #fcfcfc;
+    }
+
+    .cancelBtn {
+        border-radius: 30px;
+        border: 1px solid #85aa9f;
+        padding: 16px 50px;
+        width: 100%;
+        max-width: 203px;
+        min-width: 203px;
+        height: 56px;
+        background: #fcfcfc;
+        color: #85aa9f;
+        cursor: pointer;
+        font-family: "MacPaw Fixel Display", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #85aa9f;
+    }
+
+    .cancelBtn:hover {
+        background: #85AA9F;
+        color: #fcfcfc
+    }
+}
+
+@media (min-width: 1440px) {
+    .footerActions {
+        padding-top: 80px;
+        padding-bottom: 102px;
+    }
+}

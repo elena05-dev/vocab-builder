@@ -1,0 +1,293 @@
+.form {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+.form input,
+form select {
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    padding: 12px 24px;
+    width: 311px;
+    height: 48px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-size: 16px;
+    outline: none;
+    background: none;
+    color: #fcfcfc;
+}
+
+.field:focus {
+    border-color: #85aa9f;
+}
+
+.title,
+.text {
+    color: #fcfcfc;
+}
+
+.selectWrap {
+    position: relative;
+    width: 311px;
+    margin-top: 16px;
+}
+
+.selected {
+    height: 48px;
+    padding: 12px 24px;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-size: 16px;
+    color: #fcfcfc;
+    background: none;
+}
+
+.selectIcon {
+    pointer-events: none;
+    color: #121417;
+
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 240px;
+    overflow-y: auto;
+    background: #fff;
+    list-style: none;
+    box-shadow: 0 4px 47px rgba(18, 20, 23, 0.08);
+    margin-top: 8px;
+    padding: 8px 0;
+    z-index: 10;
+    border-radius: 15px;
+    padding: 12px 107px 12px 24px;
+    width: 311px;
+    height: 240px;
+    gap: 10px;
+}
+
+.options li {
+    gap: 8px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(18, 20, 23, 0.5);
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.options li:hover {
+    color: #85aa9f;
+}
+
+
+.categorry {
+    width: 100%;
+    height: 48px;
+    padding: 12px 48px 12px 24px;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.categorry option {
+    border-radius: 15px;
+    padding: 12px 107px 12px 24px;
+    width: 311px;
+    height: 240px;
+    box-shadow: 0 4px 47px 0 rgba(18, 20, 23, 0.08);
+    background: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.selectIcon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #fcfcfc;
+    pointer-events: none;
+}
+
+.radioGroup {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+
+
+}
+
+.radioLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.radioLabel input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fcfcfc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.radioLabel input[type="radio"]::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.radioLabel input[type="radio"]:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.radioText {
+    font-size: 14px;
+    color: #fcfcfc;
+}
+
+.mb32 {
+    margin-bottom: 16px;
+}
+
+.hint {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #fcfcfc;
+    padding-top: 8px;
+
+
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lang {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+
+.flag {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    display: block;
+}
+
+
+
+.country {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fcfcfc;
+    margin-top: 4.5px;
+    line-height: 1;
+
+}
+
+.input {
+    all: unset;
+    padding: 12px 16px;
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 15px;
+}
+
+.error {
+    font-size: 12px;
+    color: #d80027;
+}
+
+.allBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 8px;
+    padding-top: 32px;
+
+}
+
+.addBtn {
+    border-radius: 30px;
+    padding: 12px 63px;
+    width: 159px;
+    height: 48px;
+    background: #fcfcfc;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+}
+
+.addBtn:hover,
+.addBtn:focus {
+    color: #85aa9f;
+}
+
+.cancelBtn {
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    border-radius: 30px;
+    padding: 12px 45px;
+    width: 145px;
+    height: 48px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfc;
+}
+
+.cancelBtn:hover,
+.cancelBtn:focus {
+    background: #fcfcfc;
+    color: #121417;
+}

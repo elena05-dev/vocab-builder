@@ -1,0 +1,46 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 32px;
+    padding-bottom: 48px;
+}
+
+.pageBtn,
+.arrow {
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 8px;
+
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #121417;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pageBtn:hover:not(.active),
+.arrow:hover:not(:disabled) {
+    background: #f4f6fb;
+}
+
+.active {
+    background: #85aa9f;
+    color: #fff;
+}
+
+.arrow:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.dots {
+    padding: 0 6px;
+    font-size: 14px;
+    color: #8a8f98;
+}

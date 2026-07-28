@@ -1,0 +1,14 @@
+.svg {
+    transform: rotate(-90deg);
+
+}
+
+.progress {
+    transition: stroke-dashoffset 0.4s ease;
+}
+
+.text {
+    font-size: 10px;
+    fill: #333;
+    transform: rotate(90deg);
+}

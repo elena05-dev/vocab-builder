@@ -1,0 +1,160 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 20, 23, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    position: relative;
+    background-color: #85aa9f;
+    border-radius: 15px;
+    padding: 48px 16px;
+    max-width: 343px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    color: #fcfcfc;
+}
+
+
+.modal input {
+    background-color: transparent;
+    font-size: 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 15px;
+    max-width: 311px;
+    width: 100%;
+    height: 48px;
+    margin-top: 8px;
+    outline: none;
+    background: none;
+    padding: 12px 24px;
+    color: #fcfcfc;
+}
+
+.modal label {
+    padding-bottom: 16px;
+}
+
+.modal span {
+    display: flex;
+    align-items: center;
+
+}
+
+.country {
+    margin-left: 8px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fcfcfc;
+    padding-top: 4px;
+
+}
+
+.actions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    padding-top: 16px;
+}
+
+.actions button:first-child {
+    background: #fcfcfc;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 158px;
+    height: 48px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+}
+
+.actions button:first-child:hover,
+.actions button:first-child:focus {
+    color: #85aa9f
+}
+
+.actions button:last-child {
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    border-radius: 30px;
+    width: 145px;
+    height: 48px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfc;
+}
+
+.actions button:last-child:hover,
+.actions button:last-child:focus {
+    color: #121417;
+    background-color: #fcfcfc;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        max-width: 628px;
+        height: 346px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .field {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+    }
+
+    .modal label {
+        padding-bottom: 18px;
+    }
+
+    .modal input {
+        width: 354px;
+        min-width: 354px;
+        max-width: 354px;
+        margin-top: 0;
+    }
+
+    .lang {
+        width: 120px;
+        padding-left: 0;
+        justify-content: flex-start;
+    }
+
+
+
+    .actions button:first-child,
+    .actions button:last-child {
+        width: 245px;
+        height: 56px;
+    }
+}

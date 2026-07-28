@@ -1,0 +1,148 @@
+.RegisterPage {
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.content {
+    padding-top: 12px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+}
+
+.logoName {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #121417;
+    margin-left: 16px;
+}
+
+.illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.meta {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: rgba(18, 20, 23, 0.8);
+    padding-bottom: 43px;
+}
+
+.metaTablet {
+    display: none;
+}
+
+.dot {
+    margin: 0 6px;
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 24px 32px 140px 32px;
+    }
+
+    .illustration {
+        display: none;
+    }
+
+    .leftSide {
+        padding-top: 140px;
+    }
+
+    .metaTablet {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: auto;
+        padding-top: 172px;
+        padding-bottom: 32px;
+        font-family: "MacPaw Fixel Display", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        line-height: 1.5;
+        color: rgba(18, 20, 23, 0.8);
+    }
+
+    .meta {
+        display: none;
+    }
+
+    .logoName {
+        font-size: 22px;
+        line-height: 32px;
+        line-height: 1.45455;
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    .container {
+        max-width: 1200px;
+        padding: 64px;
+    }
+
+    .illustration {
+        display: block;
+    }
+
+    .content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding-top: 114px;
+    }
+
+    .leftSide {
+        width: 600px;
+        padding-right: 80px;
+    }
+
+    .rightSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .meta {
+        display: block;
+        padding-top: 16px;
+    }
+
+    .metaTablet {
+        display: none;
+    }
+
+}

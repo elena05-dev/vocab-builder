@@ -1,0 +1,138 @@
+.empty {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.bookImg {
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 32px;
+}
+
+.title {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #121417;
+    padding-bottom: 16px;
+    width: 100%;
+    max-width: 343px;
+    min-width: 245px;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #121417;
+    padding-bottom: 132px;
+    width: 100%;
+    max-width: 343px;
+    min-width: 245px;
+    margin: 0 auto;
+}
+
+.footerActions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.addBtn {
+    border-radius: 30px;
+    padding: 16px 50px;
+    width: 100%;
+    max-width: 343px;
+    min-width: 245px;
+    height: 56px;
+    background: #85aa9f;
+    color: #fcfcfc;
+    cursor: pointer;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfc;
+}
+
+.addBtn:hover {
+    background: #a5c0b8;
+}
+
+.cancelBtn {
+    background: transparent;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(18, 20, 23, 0.5);
+    padding-top: 8px;
+}
+
+.cancelBtn:hover {
+    color: #121417;
+}
+
+.repeatBtn {
+    border-radius: 30px;
+    padding: 16px 50px;
+    width: 100%;
+    max-width: 343px;
+    min-width: 245px;
+    height: 56px;
+    background: #85aa9f;
+    color: #fcfcfc;
+    cursor: pointer;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfc;
+    margin-bottom: 50px;
+}
+
+.repeatBtn:hover {
+    background: #a5c0b8;
+}
+
+@media (min-width: 768px) {
+    .footerActions {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .title {
+        max-width: 581px;
+        padding-bottom: 32px;
+    }
+
+    .text {
+        max-width: 581px;
+    }
+
+    .addBtn {
+        width: 65px;
+    }
+
+    .cancelBtn {
+        border-radius: 30px;
+        border-color: #85aa9f;
+        padding: 16px 50px;
+        width: 65px;
+        height: 56px;
+        background: #fcfcfc;
+        color: #fcfcfc;
+        cursor: pointer;
+        font-family: "MacPaw Fixel Display", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 50px;
+    }
+}

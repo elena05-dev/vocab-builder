@@ -1,0 +1,136 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    list-style: none;
+    padding: 16px 16px 92px;
+}
+
+.listItem {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding-bottom: 0;
+}
+
+
+.navLink,
+.activeLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 43px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #121417;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navLink {
+    background: transparent;
+}
+
+.navLink:hover {
+    background: rgba(252, 252, 252, 0.25);
+    transform: translateY(-1px);
+}
+
+.activeLink {
+    background: #fcfcfc;
+}
+
+.listItem a {
+    color: #121417;
+}
+
+.listItem a:hover {
+    color: #121417;
+}
+
+.logoutIcon {
+    margin-left: 6px;
+
+}
+
+.logoutItem {
+    margin-left: auto;
+
+}
+
+.logoutBtn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.logoutBtn:hover {
+    opacity: 0.7;
+}
+
+nav {
+
+    display: block;
+}
+
+@media (min-width:1440px) {
+    .nav {
+        display: flex;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        padding: 0;
+    }
+
+    .listItem {
+        padding-bottom: 0;
+    }
+
+    .listItem a {
+        font-family: "MacPaw Fixel Display", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: #121417;
+    }
+
+    .navLink,
+    .activeLink {
+        min-width: auto;
+        width: auto;
+        padding: 12px 20px;
+    }
+
+    .activeLink {
+        background: #85aa9f;
+        color: #fcfcfc;
+    }
+
+    .navLink:hover {
+        background: rgba(175, 196, 190, 0.588);
+        transform: translateY(-1px);
+    }
+
+    .logoutItem {
+        margin-left: 200px;
+    }
+
+    .logoutIcon {
+        color: #121417;
+    }
+
+    .logoutBtn {
+        color: #121417;
+    }
+}

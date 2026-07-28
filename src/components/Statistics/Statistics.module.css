@@ -1,0 +1,30 @@
+.statistics {
+    padding-bottom: 8px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(18, 20, 23, 0.5);
+}
+
+.statLine {
+    display: flex;
+}
+
+.statistics span {
+    margin-left: 8px;
+    font-size: 20px;
+    line-height: 1;
+    color: #121417;
+}
+
+@media (min-width: 768px) {
+    .statistics {
+        padding-bottom: 0;
+        padding-right: 16px;
+        font-size: 16px;
+    }
+
+    .statistics span {
+        padding-top: 3px;
+    }
+}

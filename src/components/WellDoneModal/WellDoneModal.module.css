@@ -1,0 +1,97 @@
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(18, 20, 23, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+
+.modal {
+    position: relative;
+    width: 343px;
+    background-color: #85aa9f;
+    border-radius: 15px;
+    padding: 48px 16px;
+    box-sizing: border-box;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    cursor: pointer;
+
+    color: #fcfcfc;
+
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 32px;
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #fcfcfc;
+}
+
+.welldone {
+    display: flex;
+
+}
+
+.welldone p {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(252, 252, 252, 0.5);
+}
+
+
+
+.correctBlock ul {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfc;
+    list-style: none;
+
+    padding: 0;
+}
+
+.mistakes {
+    padding-left: 32px;
+}
+
+.mistakes ul {
+    font-family: "MacPaw Fixel Display", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fcfcfc;
+    list-style: none;
+
+}
+
+.bookImg {
+    margin-top: 51px;
+    margin-left: 32px;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 528px;
+        height: 520px;
+    }
+
+    .bookImg {
+        margin-top: 180px;
+        margin-left: 160px;
+    }
+}
