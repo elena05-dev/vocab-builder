@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { addWord } from "../../redux/slaces/wordSlace";
 import toast from "react-hot-toast";
+import sprite from "../../assets/icons/sprite1.svg";
 import css from "./EditWordModal.module.css";
 
 const EN_REGEX = /\b[A-Za-z'-]+(?:\s+[A-Za-z'-]+)*\b/;
@@ -50,7 +51,7 @@ export default function EditWordModal({ onCancel }) {
       <label className={css.field}>
         <span className={css.lang}>
           <svg className={css.flag} width="24" height="24" aria-hidden>
-            <use href="/src/assets/icons/sprite.svg#icon-ukraine" />
+            <use href={`${sprite}#icon-ukraine`} />
           </svg>
           <span className={css.country}>Ukrainian</span>
         </span>
@@ -61,7 +62,7 @@ export default function EditWordModal({ onCancel }) {
       <label className={css.field}>
         <span className={css.lang}>
           <svg className={css.flag} width="24" height="24" aria-hidden>
-            <use href="/src/assets/icons/sprite.svg#icon-united-kingdom" />
+            <use href={`${sprite}#icon-united-kingdom`} />
           </svg>
           <span className={css.country}>English</span>
         </span>

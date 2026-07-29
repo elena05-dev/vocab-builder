@@ -1,6 +1,7 @@
 import css from "./WordsTable.module.css";
 import CircularProgress from "../CircularProgress/CircularProgress";
 import { Pencil, Trash2 } from "lucide-react";
+import sprite from "../../assets/icons/sprite1.svg";
 import { useEffect, useState } from "react";
 
 export default function WordsTable({
@@ -137,7 +138,9 @@ export default function WordsTable({
                           <span className={css.addedIcon}>✓</span>
                         ) : (
                           <svg className={css.icon} width="20" height="20">
-                            <use href="/src/assets/icons/sprite.svg#icon-switch-horizontal-right" />
+                            <use
+                              href={`${sprite}#icon-switch-horizontal-right`}
+                            />
                           </svg>
                         )}
                       </button>

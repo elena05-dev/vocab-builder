@@ -7,6 +7,8 @@ import {
   selectCategoriesError,
 } from "../../redux/slaces/selectors/categoriesSelectors";
 import Loader from "../loader/loader";
+import sprite from "../../assets/icons/sprite.svg";
+import toggleIcon from "../../assets/icons/3d-mpr-toggle 2.svg";
 import css from "./Filters.module.css";
 
 export default function Filters({
@@ -54,7 +56,7 @@ export default function Filters({
     <section className={css.filters}>
       <div className={css.searchWrapper}>
         <svg className={css.searchIcon} width="20" height="20">
-          <use href="/src/assets/icons/sprite.svg#icon-search" />
+          <use href={`${sprite}#icon-search`} />
         </svg>
         <input
           type="text"
@@ -75,7 +77,7 @@ export default function Filters({
         </select>
         <span>
           <svg className={css.selectIcon} width="20" height="20">
-            <use href="/src/assets/icons/3d-mpr-toggle 2.svg" />
+            <img src={toggleIcon} alt="" aria-hidden="true" />
           </svg>
         </span>
       </div>

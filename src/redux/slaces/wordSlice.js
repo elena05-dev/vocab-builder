@@ -96,6 +96,7 @@ export const fetchTrainingWords = createAsyncThunk(
     try {
       const res = await api.get("/words/tasks");
 
+      console.log("TRAINING API:", res.data);
       return res.data.tasks;
     } catch (err) {
       return rejectWithValue(err.message);

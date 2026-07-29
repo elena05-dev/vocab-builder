@@ -6,6 +6,7 @@ import { addWord } from "../../redux/slaces/wordSlice";
 import { fetchCategories } from "../../redux/slaces/categoriesSlace";
 import { fetchStatistics } from "../../redux/slaces/wordSlice";
 import { selectCategoriesItems } from "../../redux/slaces/selectors/categoriesSelectors";
+import sprite from "../../assets/icons/sprite.svg";
 import toast from "react-hot-toast";
 import css from "./AddWordForm.module.css";
 
@@ -109,7 +110,9 @@ export default function AddWordForm({ onCancel, onSuccess }) {
         >
           {category ? category : "Category"}
           <svg className={css.selectIcon} width="20" height="20">
-            <use href="/src/assets/icons/sprite1.svg#icon-cheveron-down" />
+            <svg className={css.selectIcon} width="20" height="20">
+              <use href={`${sprite}#icon-cheveron-down`} />
+            </svg>
           </svg>
         </div>
         {errors.category && <p className={css.error}>{errors.category}</p>}
@@ -181,7 +184,7 @@ export default function AddWordForm({ onCancel, onSuccess }) {
       <label className={css.field}>
         <span className={css.lang}>
           <svg className={css.flag} width="24" height="24" aria-hidden>
-            <use href="/src/assets/icons/sprite.svg#icon-ukraine" />
+            <use href={`${sprite}#icon-ukraine`} />
           </svg>
           <span className={css.country}>Ukrainian</span>
         </span>
@@ -192,7 +195,7 @@ export default function AddWordForm({ onCancel, onSuccess }) {
       <label className={css.field}>
         <span className={css.lang}>
           <svg className={css.flag} width="24" height="24" aria-hidden>
-            <use href="/src/assets/icons/sprite.svg#icon-united-kingdom" />
+            <use href={`${sprite}#icon-united-kingdom`} />
           </svg>
           <span className={css.country}>English</span>
         </span>

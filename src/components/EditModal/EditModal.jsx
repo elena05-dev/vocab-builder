@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import sprite from "../../assets/icons/sprite.svg";
 import css from "./EditModal.module.css";
 
 export default function EditModal({ word, onSave, onClose }) {
@@ -35,14 +36,14 @@ export default function EditModal({ word, onSave, onClose }) {
       <div className={css.modal} onClick={(e) => e.stopPropagation()}>
         <button className={css.closeBtn} onClick={onClose}>
           <svg width="24" height="24">
-            <use href="/src/assets/icons/sprite.svg#icon-clos" />
+            <use href={`${sprite}#icon-clos`} />
           </svg>
         </button>
 
         <label className={css.field}>
           <span className={css.lang}>
             <svg className={css.flag} width="24" height="24" aria-hidden>
-              <use href="/src/assets/icons/sprite.svg#icon-ukraine" />
+              <use href={`${sprite}#icon-ukraine`} />
             </svg>
             <span className={css.country}>Ukrainian</span>
           </span>
@@ -52,7 +53,7 @@ export default function EditModal({ word, onSave, onClose }) {
         <label className={css.field}>
           <span className={css.lang}>
             <svg className={css.flag} width="24" height="24" aria-hidden>
-              <use href="/src/assets/icons/sprite.svg#icon-united-kingdom" />
+              <use href={`${sprite}#icon-united-kingdom`} />
             </svg>
             <span className={css.country}>English</span>
           </span>

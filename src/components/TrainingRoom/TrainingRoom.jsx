@@ -1,4 +1,5 @@
 import css from "./TrainingRoom.module.css";
+import sprite from "../../assets/icons/sprite.svg";
 import { useEffect } from "react";
 
 export default function TrainingRoom({
@@ -38,7 +39,7 @@ export default function TrainingRoom({
             <button className={css.nextBtn} onClick={onNext}>
               Next
               <svg className={css.icon} width="20" height="20">
-                <use href="/src/assets/icons/sprite.svg#icon-switch-horizontal-right" />
+                <use href={`${sprite}#icon-switch-horizontal-right`} />
               </svg>
             </button>
           </div>

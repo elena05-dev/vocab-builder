@@ -48,6 +48,7 @@ export const loginUser = createAsyncThunk(
   async (data, { rejectWithValue }) => {
     try {
       const response = await signin(data);
+      console.log("LOGIN RESPONSE", response);
       return response;
     } catch (err) {
       return rejectWithValue(err.response?.data?.message || "Login failed");
@@ -66,6 +67,10 @@ export const fetchCurrentUser = createAsyncThunk(
       const response = await getCurrentUser();
       return response;
     } catch (err) {
+      if (err.response?.status === 401) {
+        localStorage.removeItem("token");
+      }
+
       return rejectWithValue(
         err.response?.data?.message || "Fetching user failed",
       );
@@ -123,9 +128,13 @@ const authSlice = createSlice({
         state.token = action.payload.token;
         state.isRefreshing = false;
       })
-      .addCase(fetchCurrentUser.rejected, (state) => {
+      .addCase(fetchCurrentUser.rejected, (state, action) => {
         state.isRefreshing = false;
         state.user = null;
+        state.token = null;
+        state.error = action.payload;
+
+        removeToken();
       });
   },
 });

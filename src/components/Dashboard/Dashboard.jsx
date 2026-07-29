@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Filters from "../Filters/Filters";
 import Statistics from "../Statistics/Statistics";
 import AddWordBtn from "../AddWordBtn/AddWordBtn";
+import sprite from "../../assets/icons/sprite.svg";
 import css from "./Dashboard.module.css";
 
 export default function Dashboard({
@@ -37,7 +38,7 @@ export default function Dashboard({
           >
             Train oneself
             <svg className={css.icon} width="20" height="20">
-              <use href="/src/assets/icons/sprite.svg#icon-switch-horizontal-right" />
+              <use href={`${sprite}#icon-switch-horizontal-right`} />
             </svg>
           </Link>
         </div>
