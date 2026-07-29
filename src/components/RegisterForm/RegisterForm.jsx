@@ -6,6 +6,7 @@ import { RegisterSchema } from "./RegisterSchema";
 import { useDispatch } from "react-redux";
 import toast from "react-hot-toast";
 import { registerUser } from "../../redux/slaces/authSlace";
+import sprite from "../../assets/icons/sprite.svg";
 import css from "./RegisterForm.module.css";
 
 export default function RegisterForm() {
@@ -94,8 +95,8 @@ export default function RegisterForm() {
                 <use
                   href={
                     showPassword
-                      ? "/src/assets/icons/sprite.svg#icon-eye"
-                      : "/src/assets/icons/sprite.svg#icon-eye-off"
+                      ? `${sprite}#icon-eye`
+                      : `${sprite}#icon-eye-off`
                   }
                 />
               </svg>

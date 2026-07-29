@@ -1,7 +1,7 @@
 import css from "./WordsTable.module.css";
 import CircularProgress from "../CircularProgress/CircularProgress";
 import { Pencil, Trash2 } from "lucide-react";
-import sprite from "../../assets/icons/sprite1.svg";
+import sprite from "../../assets/icons/sprite.svg";
 import { useEffect, useState } from "react";
 
 export default function WordsTable({

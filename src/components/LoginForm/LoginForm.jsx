@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../../redux/slaces/authSlace";
 import toast from "react-hot-toast";
+import sprite from "../../assets/icons/sprite.svg";
 import css from "./LoginForm.module.css";
 
 export default function LoginForm() {
@@ -81,8 +82,8 @@ export default function LoginForm() {
                 <use
                   href={
                     showPassword
-                      ? "/src/assets/icons/sprite.svg#icon-eye"
-                      : "/src/assets/icons/sprite.svg#icon-eye-off"
+                      ? `${sprite}#icon-eye`
+                      : `${sprite}#icon-eye-off`
                   }
                 />
               </svg>

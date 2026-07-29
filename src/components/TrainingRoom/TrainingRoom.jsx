@@ -50,8 +50,8 @@ export default function TrainingRoom({
             <use
               href={
                 isEnTask
-                  ? "/src/assets/icons/sprite.svg#icon-united-kingdom"
-                  : "/src/assets/icons/sprite.svg#icon-ukraine"
+                  ? `${sprite}#icon-united-kingdom`
+                  : `${sprite}#icon-ukraine`
               }
             />
           </svg>
@@ -70,8 +70,8 @@ export default function TrainingRoom({
             <use
               href={
                 isEnTask
-                  ? "/src/assets/icons/sprite.svg#icon-ukraine"
-                  : "/src/assets/icons/sprite.svg#icon-united-kingdom"
+                  ? `${sprite}#icon-ukraine`
+                  : `${sprite}#icon-united-kingdom`
               }
             />
           </svg>
