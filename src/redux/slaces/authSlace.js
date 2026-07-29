@@ -5,7 +5,7 @@ const initialState = {
   user: null,
   token: localStorage.getItem("token"),
   isLoading: false,
-  isRefreshing: true,
+  isRefreshing: false,
   error: null,
 };
 
@@ -123,13 +123,9 @@ const authSlice = createSlice({
         state.token = action.payload.token;
         state.isRefreshing = false;
       })
-      .addCase(fetchCurrentUser.rejected, (state, action) => {
-        state.user = null;
-        state.token = null;
-        state.error = action.payload;
+      .addCase(fetchCurrentUser.rejected, (state) => {
         state.isRefreshing = false;
-
-        removeToken();
+        state.user = null;
       });
   },
 });
