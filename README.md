@@ -116,7 +116,21 @@ https://vocab-builder-lilac.vercel.app/
 
 ## 📸 Screenshots
 
-Screenshots of the application will be added here.
+### Login
+
+![Login](./screenshots/login.png)
+
+### Dictionary
+
+![Dictionary](./screenshots/dictionary.png)
+
+### Training
+
+![Training](./screenshots/training.png)
+
+### Statistics
+
+![Statistics](./screenshots/statistics.png)
 
 ## 👩‍💻 Author
 
