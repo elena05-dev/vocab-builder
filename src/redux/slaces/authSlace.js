@@ -65,12 +65,9 @@ export const fetchCurrentUser = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await getCurrentUser();
+
       return response;
     } catch (err) {
-      if (err.response?.status === 401) {
-        localStorage.removeItem("token");
-      }
-
       return rejectWithValue(
         err.response?.data?.message || "Fetching user failed",
       );
@@ -81,7 +78,11 @@ export const fetchCurrentUser = createAsyncThunk(
 const authSlice = createSlice({
   name: "auth",
   initialState,
-  reducers: {},
+  reducers: {
+    setRefreshing: (state, action) => {
+      state.isRefreshing = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
 
@@ -125,6 +126,7 @@ const authSlice = createSlice({
           email: action.payload.email,
         };
 
+        state.token = action.payload.token;
         state.isRefreshing = false;
       })
       .addCase(fetchCurrentUser.rejected, (state) => {
@@ -136,5 +138,5 @@ const authSlice = createSlice({
       });
   },
 });
-
+export const { setRefreshing } = authSlice.actions;
 export default authSlice.reducer;
