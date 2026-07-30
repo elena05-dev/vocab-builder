@@ -5,7 +5,7 @@ const initialState = {
   user: null,
   token: localStorage.getItem("token"),
   isLoading: false,
-  isRefreshing: false,
+  isRefreshing: true,
   error: null,
 };
 
@@ -48,7 +48,7 @@ export const loginUser = createAsyncThunk(
   async (data, { rejectWithValue }) => {
     try {
       const response = await signin(data);
-      console.log("LOGIN RESPONSE", response);
+
       return response;
     } catch (err) {
       return rejectWithValue(err.response?.data?.message || "Login failed");
@@ -125,14 +125,12 @@ const authSlice = createSlice({
           email: action.payload.email,
         };
 
-        state.token = action.payload.token;
         state.isRefreshing = false;
       })
-      .addCase(fetchCurrentUser.rejected, (state, action) => {
+      .addCase(fetchCurrentUser.rejected, (state) => {
         state.isRefreshing = false;
         state.user = null;
         state.token = null;
-        state.error = action.payload;
 
         removeToken();
       });
