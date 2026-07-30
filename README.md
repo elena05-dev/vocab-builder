@@ -1,16 +1,126 @@
-# React + Vite
+# VocabBuilder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+VocabBuilder is a web application for learning and practicing English vocabulary.
 
-Currently, two official plugins are available:
+The application allows users to build their personal vocabulary, practice new words, and track learning progress through interactive training.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- User authentication (registration, login, logout)
+- JWT token authorization
+- Protected routes
+- Personal dictionary
+- Adding, editing, and deleting words
+- Recommended words for learning
+- Word filtering by category
+- Interactive vocabulary training
+- Learning progress tracking
+- Statistics dashboard
+- Responsive design for desktop, tablet, and mobile devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Technologies
 
-## Expanding the ESLint configuration
+### Frontend
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Redux Toolkit
+- React Router
+- Axios
+- React Hook Form
+- Yup
+- CSS Modules
+
+### Tools
+
+- Git
+- GitHub
+- Vercel
+- ESLint
+
+## 🔐 Authentication
+
+Authentication is implemented using JWT tokens.
+
+The application includes:
+
+- User registration
+- User login and logout
+- Token storage in localStorage
+- Automatic user session restoration after page reload
+- Protected routes for authorized users
+
+## 📚 Main Functionality
+
+### Personal Dictionary
+
+Users can:
+
+- Add new words
+- Edit existing words
+- Delete words
+- View personal vocabulary
+
+### Recommended Words
+
+Users can:
+
+- Browse recommended words
+- Filter words by category
+- Select words for learning
+
+### Training System
+
+The training module provides:
+
+- Interactive word exercises
+- Checking user answers
+- Progress updates
+- Learning statistics
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/elena05-dev/vocab-builder.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+Create production build:
+
+```bash
+npm run build
+```
+
+Run ESLint:
+
+```bash
+npm run lint
+```
+
+## 🌐 Live Demo
+
+https://vocab-builder-lilac.vercel.app/
+
+## 📸 Screenshots
+
+Screenshots of the application will be added here.
+
+## 👩‍💻 Author
+
+Elena Polyakova
+
+GitHub:
+https://github.com/elena05-dev
